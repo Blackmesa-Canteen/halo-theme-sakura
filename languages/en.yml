@@ -1,0 +1,101 @@
+home:
+  feature:
+    title: Recommends
+    one: 
+      title: feature1
+      desc: This is feature1
+    two:
+      title: feature2
+      desc: This is feature2
+    three:
+      title: feature3
+      desc: This is feature3
+  discovery: discovery
+
+postlist:
+  time: Published at %s
+  heat: '%s hots'
+  comments: '%s comments'
+
+post:
+  prev: Previous Post
+  next: Next Post
+  visits: '%s views'
+  reward: reward
+  creative_commons: Creative Commons Attribution - Non-commercial - Share in the same way 4.0 International license
+
+page:
+  next: Next
+  theend: No more contents
+  archives:
+    title: Archive
+  categories:
+    title: Categories
+    item_title: Category：%s
+  photos:
+    title: Gallery
+    all: All
+  links:
+    title: Friend-Link
+  journal:
+    title: Journal
+    loadmore: See more...
+    empty: The maintainer is so lazy, there is nothing here yet!!
+  search:
+    title: Search results for “ %s ”
+    sresult: 'Search results: '
+  tags:
+    title: Tags
+    item:
+      title: Tag：%s
+
+  none:
+    title: Nothing Here...
+    search: oops, It seems that you didn't find what you wanted. You could have a look on some other contents here...
+    notfound: We found nothing. Maybe try to search it?
+
+
+comment:
+  number: '%s comments'
+  name: Comments | 
+
+notfound:
+  title: Woops, Looks like %s doesn't exist
+  golast: Return back
+  gohome: Return home
+  search: Don't worry. why not try the in-site search?
+  search_2: Good luck~
+  searchinput: Search...
+
+user:
+  description: Less is more.
+
+icon_alt:
+  wechat: WeChat Official Account
+  sina: Weibo
+  qq: QQ chat？
+  qzone: QQ Zone
+  github: Github
+  lofter: Lofter
+  bili: Bilibili
+  cloudmusic: Netease Music
+  twitter: Twitter
+  facebook: Facebook
+  googleplus: Google+
+  jianshu: Jianshu
+  zhihu: Zhihu
+  csdn: CSDN
+  telegram: Telegram
+  email: Email
+  stackoverflow: Stack Overflow
+
+share:
+  weibo: Share to Weibo
+  qq: Share to QQ
+  wechat:
+    qcode_title: Wechat QR-code scan
+    help_1: Scan the code with WeChat APP,
+    help_2: You can share the content to the moment。
+  douban: Share to Douban
+  qzone: Share to QQ zone
+  linkedin: Share to Linkedin

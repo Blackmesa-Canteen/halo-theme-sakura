@@ -41,20 +41,28 @@
 			<@global.footer />
 		</div>
 		<div class="footer-device">
+			<!-- 接力 -->
+			<a href="https://travellings.link/" target="_blank" rel="noopener" title="开往-友链接力">
+				<img src="https://cdn.jsdelivr.net/gh/volfclub/travellings@12.0/assets/logo.gif" alt="开往-友链接力" width="120">
+			</a>
 			<!-- 请尊重作者，请务必保留版权 -->
+			<p style="font-family: 'Ubuntu', sans-serif;">Open-Source Project:</p>
 			<p style="font-family: 'Ubuntu', sans-serif;">
-				<span>Powered 
- 					<i class="fa fa-vimeo animated" style="color: #e74c3c;"></i> 
-					by 
-					<a rel="me" target="_blank"  href="http://halo.run" title="一个优秀的开源博客发布应用" style="text-decoration:none;">Halo</a>
+				<span>Back-End is powered
+ 					<i class="fa fa-vimeo animated" style="color: #e74c3c;"></i>
+					by
+					<a rel="me" target="_blank"  href="https://github.com/halo-dev/halo" title="一个优秀的开源博客发布应用" style="text-decoration:none;">Halo</a>
 				</span>
-				 •
-				<span>Crafted with
- 					<i class="fa fa-heart animated" style="color: #e74c3c;"></i> 
-					by 
+				•
+				<span>Front-End is crafted with
+ 					<i class="fa fa-heart animated" style="color: #e74c3c;"></i>
+					by
 					<a rel="me" target="_blank" href="https://github.com/LIlGG/halo-theme-sakura" style="text-decoration:none;">LIlGG</a>
+                  	&
+                    <a rel="me" target="_blank" href="https://github.com/Blackmesa-Canteen/halo-theme-sakura" style="text-decoration:none;">996worker</a>
 				</span>
 			</p>
+			<p id="htmer_time" style="font-family: 'Ubuntu', sans-serif;" />
 			<p>
 				© ${.now?string("yyyy")} ${(user.nickname)!}
 				<#if settings.footer_case_number??  && settings.footer_case_number != "">
@@ -65,7 +73,7 @@
 				&nbsp;
 				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${settings.footer_ga_select_number!}" target="_blank">
 					<img src="${res_base_url!}/source/images/other/gongan.png">${settings.footer_ga_case_number}
-				</a>	
+				</a>
 				</#if>
 			</p>
 		</div>
@@ -224,12 +232,12 @@
 	};
 	var bgConfig = {
 	<#list 0..7 as i>
-		<#assign name = (("settings.bg_name_" + i)?eval)?default(""), 
+		<#assign name = (("settings.bg_name_" + i)?eval)?default(""),
 				desc = (("settings.bg_desc_" + i)?eval)?default(""),
 				url = (("settings.bg_url_" + i)?eval)?default(""),
 				strategy = (("settings.bg_img_strategy_" + i)?eval)?default(""),
 				isNight = (("settings.bg_night_" + i)?eval)?default("") />
-		
+
 		"bg_${i}": {
 			"id": "${i}",
 			"name": "${name}",
@@ -295,6 +303,13 @@
 <script type='text/javascript' src='${res_base_url!}/source/lib/flv.min/index.js' defer></script>
 <script type='text/javascript' src='${res_base_url!}/script/i18n.min.js?ver=1.3.1' defer></script>
 <script type='text/javascript' src='${theme_base!}/script/app.min.js?ver=1.3.1'></script>
+<!--运行日期-->
+<script>
+	function secondToDate(second){if(!second){return 0}var time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600}if(second>=3600){time[2]=parseInt(second/3600);second%=3600}if(second>=60){time[3]=parseInt(second/60);second%=60}if(second>0){time[4]=second}return time};
+</script>
+<script type="text/javascript" language="javascript">
+	function setTime(){var create_time=Math.round(new Date(Date.UTC(2021,6,21,11,42,23)).getTime()/1000);var timestamp=Math.round((new Date().getTime()+8*60*60*1000)/1000);currentTime=secondToDate((timestamp-create_time));currentTimeHtml="This site has been running for："+currentTime[0]+" yrs "+currentTime[1]+" d "+currentTime[2]+" h "+currentTime[3]+" m "+currentTime[4]+" s ";document.getElementById("htmer_time").innerHTML=currentTimeHtml}setInterval(setTime,1000);
+</script>
 <#nested />
 <#if settings.live2d_switch!true>
 <script src="${res_base_url!}/source/lib/jquery-ui/jquery-ui.min.js" async defer></script>

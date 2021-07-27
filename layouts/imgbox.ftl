@@ -1,3 +1,4 @@
+<div id="banner_wave_1"></div><div id="banner_wave_2"></div>
 <figure id="centerbg" class="centerbg" style="background-image: url(
 	<#if settings.rimage_cover_back_open!false && settings.rimage_url?? && settings.rimage_url!=''>
 		${settings.rimage_url!}?home=home&type=url&itype=${settings.rimage_cover_back_itype!}&id=${(settings.rimage_cover_back_id)!''}&t=<#if settings.rimage_cover_back_num != 0>${randomMethod(1,settings.rimage_cover_back_num + 1)}<#else>${.now?string('yyyyMMddHHmmssSSS')}</#if>
@@ -24,7 +25,7 @@
 		</#if>
 		<div class="header-info">
 			<#if user.description?default("")?trim?length gt 1>
-			<p><i class="fa fa-quote-left"></i>${user.description}<i class="fa fa-quote-right"></i></p>
+			<p><span class="faa-flash animated"><i class="fa fa-quote-left"></i></span>${user.description}<span class="faa-flash animated"><i class="fa fa-quote-right"></i></span></p>
 			</#if>
 			<div class="top-social_v2">
 			    <li id="bg-pre">

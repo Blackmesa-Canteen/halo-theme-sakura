@@ -331,7 +331,16 @@
     }
 </style>
 <!-- 黑夜模式评论模块 -->
+    <!-- 加入996专用图片 -->
 <style id="comment-style" type="text/css" media="noexist">
+    .halo-comment textarea {
+        /*就下面这张图片能换*/
+        background-image: url(https://www.996workers.icu/upload/2021/07/heluo-9e51ec6a7fc14642a4b8c9098d880acf.gif) !important;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        resize: vertical
+    }
     .halo-comment.dark button,
     .halo-comment.dark input,
     .halo-comment.dark select,

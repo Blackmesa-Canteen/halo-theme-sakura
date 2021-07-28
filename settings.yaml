@@ -133,6 +133,17 @@ mainScreen:
           label: 开启
         - value: false
           label: 关闭
+    wave_switch:
+      name: wave_switch
+      label: 背景图波浪效果
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
     focus_tou:
       name: focus_tou
       label: 头部样式
@@ -212,7 +223,7 @@ mainScreen:
         - value: true
           label: 开启
         - value: false
-          label: 关闭  
+          label: 关闭
     bgvideo_url:
       name: bgvideo_url
       label: 视频链接（优先播放视频链接）
@@ -574,7 +585,7 @@ comment:
       name: comment_gravatar_source
       label: Gravatar 源地址
       type: text
-      default: "//cn.gravatar.com/avatar"
+      default: "//cdn.v2ex.com/gravatar/"
       description: "暂时用于适配 Halo 1.4.8 以下用户，当主题最低要求 Halo 1.4.8 之后将移除"
     comment_loading_style:
       name: comment_loading_style
@@ -614,10 +625,10 @@ comment:
       type: text
       default: "暂无评论"
 comment_custom_style:
-      name: comment_custom_style
-      label: 自定义评论组件CSS样式
-      type: textarea
-      description: '确保样式以.halo-comment开头，防止污染其他css。如果属性不生效，则加上!important提升优先度'
+  name: comment_custom_style
+  label: 自定义评论组件CSS样式
+  type: textarea
+  description: '确保样式以.halo-comment开头，防止污染其他css。如果属性不生效，则加上!important提升优先度'
 tagAndCategory:
   label: 标签及分类页
   items:
@@ -988,7 +999,7 @@ theme:
       name: dark_imgbri
       label: 黑夜模式图像亮度
       type: number
-      default: 0.7  
+      default: 0.7
     dark_widget_tmd:
       name: dark_widget_tmd
       label: 黑夜模式控件透明度
@@ -1935,7 +1946,7 @@ others:
       label: 公安联网备案号
       type: text
       default: ""
-      description: "应与公安备案信息内的编号一致"   
+      description: "应与公安备案信息内的编号一致"
     head_notice:
       name: head_notice
       label: 开启公告

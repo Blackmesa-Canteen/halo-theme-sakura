@@ -2,10 +2,10 @@ id: LIlGG_BlackMesaCanteen_Sakura
 name: Sakura for 996
 author:
   name: LIlGG & Blackmesa-Canteen
-  website: https://lixingyong.com
+  website: https://www.996workers.icu
 description: 适用于996workers博客的halo版本的樱花🌸主题
 logo:
 website: https://github.com/Blackmesa-Canteen/halo-theme-sakura
 repo: https://github.com/Blackmesa-Canteen/halo-theme-sakura
-version: 1.3.2
+version: 1.3.3
 require: 1.4.3

@@ -40,7 +40,7 @@
     }
 
     .search-form.is-visible {
-        background-image: url(${res_base_url!}/source/images/other/iloli.gif);
+        background-image: url(${res_base_url!}/source/images/gifs/menherachan.gif);
     }
 
     #pagination .loading {
@@ -335,7 +335,7 @@
 <style id="comment-style" type="text/css" media="noexist">
     .halo-comment textarea {
         /*就下面这张图片能换*/
-        background-image: url(https://www.996workers.icu/upload/2021/07/heluo-9e51ec6a7fc14642a4b8c9098d880acf.gif) !important;
+        background-image: url(https://cdn.jsdelivr.net/gh/Blackmesa-Canteen/halo-theme-sakura@1.3.3/source/images/gifs/iloli.gif) !important;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;

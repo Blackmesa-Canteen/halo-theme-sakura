@@ -9,7 +9,7 @@
  * @package Akina
  */
 -->
-<#global res_base_url = settings.cdn?then("//cdn.jsdelivr.net/gh/LIlGG/halo-theme-sakura@1.3.1", theme_base)/>
+<#global res_base_url = settings.cdn?then("//cdn.jsdelivr.net/gh/Blackmesa-Canteen/halo-theme-sakura@1.3.3", theme_base)/>
 <#macro footer>
 </div><!-- #content -->
 <#include "comments.ftl">
@@ -250,7 +250,7 @@
 	};
 	/* ]]> */
 </script>
-<script type='text/javascript' src='${res_base_url!}/script/utils.min.js?ver=1.3.1'></script>
+<script type='text/javascript' src='${res_base_url!}/script/utils.min.js?ver=1.3.3'></script>
 <script type="text/javascript" src="${res_base_url!}/source/lib/lazysizes/lazysizes.min.js"></script>
 <script type="text/javascript" src="${res_base_url!}/source/js/lib.js"></script>
 <!-- 相册 -->
@@ -301,8 +301,8 @@
 </#if>
 <script type='text/javascript' src='${res_base_url!}/source/js/qrcode.min.js' defer></script>
 <script type='text/javascript' src='${res_base_url!}/source/lib/flv.min/index.js' defer></script>
-<script type='text/javascript' src='${res_base_url!}/script/i18n.min.js?ver=1.3.1' defer></script>
-<script type='text/javascript' src='${theme_base!}/script/app.min.js?ver=1.3.1'></script>
+<script type='text/javascript' src='${res_base_url!}/script/i18n.min.js?ver=1.3.3' defer></script>
+<script type='text/javascript' src='${theme_base!}/script/app.min.js?ver=1.3.3'></script>
 <!--运行日期-->
 <script>
 	function secondToDate(second){if(!second){return 0}var time=new Array(0,0,0,0,0);if(second>=365*24*3600){time[0]=parseInt(second/(365*24*3600));second%=365*24*3600}if(second>=24*3600){time[1]=parseInt(second/(24*3600));second%=24*3600}if(second>=3600){time[2]=parseInt(second/3600);second%=3600}if(second>=60){time[3]=parseInt(second/60);second%=60}if(second>0){time[4]=second}return time};

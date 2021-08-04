@@ -11,7 +11,7 @@
 
 该主题的基础版为 [halo-theme-sakura](https://github.com/LIlGG/halo-theme-sakura),非常感谢这个主题，让我有了学习和改编的空间
 
-> 本主题目前只适用于我的996workers.icu网站，因为有些内容写死了，比如图片地址。由于我的服务器有防盗链，所以目前用不到其他网站上。
+<img src="https://github.com/Blackmesa-Canteen/halo-theme-sakura/blob/master/screenshot.png"/>
 
 ## 贡献者
 

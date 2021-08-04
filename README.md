@@ -29,5 +29,3 @@
 **halo-theme-sakura-for-996** © [Blackmesa-Canteen](https://github.com/Blackmesa-Canteen)，基于 [MIT](./LICENSE) 许可证发行。<br>
 
 作者及其贡献者共有版权 （[帮助维护列表](https://github.com/LIlGG/halo-theme-sakura/graphs/contributors)）。
-
-> [lixingyong.com](https://lixingyong.com) · GitHub [@LIlGG](https://github.com/LIlGG)
